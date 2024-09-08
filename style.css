@@ -1,0 +1,160 @@
+@import url(https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap);
+
+:root {
+    --verde: #038C33;
+    --vermelho: #D90718;
+    --azulclaro: #048ABF;
+    --azulescuro: #2F2B8C;
+    --amarelo: #F2CB05;
+    --cinzaclaro: #f2f2f2;
+    --fonte: "Playfair Display", serif;
+
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffff;
+    text-align: center;
+    font-family: var(--fonte);
+}
+
+/* Estilizando a header */
+header{
+    width: 100%;
+}
+
+/* Estilizando o banner do início */
+.banner-bienal{
+    height: 20vh;
+    width: 100%;
+    z-index: -1;
+}
+
+/* Estilizando a logo do início */
+
+.logo-bienal{
+    height: 35%;
+    z-index: 1;
+    margin-top: -9vh;
+}
+
+/* Estilizando o título */
+
+h1 {
+    font-family: var(--fonte);
+    font-size: 3.5rem;
+    margin-top: -1vh;
+
+}
+
+/* Estilizando a descrição */
+.instrucao {
+    font-family: var(--fonte);
+    font-size: 1.5rem;
+    margin-top: -4vh;
+    margin-bottom: 8vh;
+}
+
+/* Estilizando as sections */
+
+.inputbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+/* Estilizando os inputs dentro das seções */
+section input {
+    width: 40rem;
+    margin-top: 4vh;
+    border: none;
+    border-radius: 1.5rem;
+    padding: 1rem;
+    box-sizing: border-box;
+    margin-right: 1rem;
+    margin-left: 5vh;
+    font-size: 1.3rem;
+    font-family: var(--fonte);
+    color: #3a3a3a;
+    background-color: var(--cinzaclaro);
+}
+
+/* Estilizando o botão dentro das seções */
+section button {
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 1.5rem;
+    height: 3.5rem;
+    width: 10rem;
+    margin-top: 4vh;
+    font-size: 1.2rem;
+    background-color: var(--verde);
+    color: var(--cinzaclaro);
+    cursor: pointer;
+}
+
+section button:hover {
+    background-color: var(--azulclaro);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+.resultados-pesquisa {
+    display: flex;
+    flex-direction: column;
+    width: 60rem; 
+    height: 46vh; 
+    overflow-y: auto; /* Adiciona rolagem vertical se necessário */
+    margin-top: 1rem; /* Espaçamento acima da caixa de resultados */
+    padding: 1rem; /* Espaçamento interno */
+    border-radius: 0.6rem; /* Borda arredondada */
+}
+
+.item-resultado {
+    background: var(--cinzaclaro); /* Cor de fundo dos itens */
+    border-radius: 0.6rem; /* Borda arredondada */
+    padding: 1rem; /* Espaçamento interno */
+    margin-bottom: 1rem; /* Espaçamento abaixo dos itens */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    border-color: var(--verde);
+    text-align: left;
+}
+
+.item-resultado h2 {
+    font-size: 1.5rem; /* Tamanho da fonte */
+    color: var(--verdefolha); /* Cor do texto */
+}
+
+/* Estiliza os links dentro dos itens de resultado */
+.item-resultado a {
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    color: #30475E; /* Cor do texto dos links */
+}
+
+/* Estiliza os links quando são passados o mouse sobre */
+.item-resultado a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+/* Estiliza a descrição meta dentro dos itens de resultado */
+.descricao-meta {
+    color: #45474B; /* Cor do texto */
+    margin: 0.5rem 0; /* Margem acima e abaixo */
+}
+
+/* Estiliza o rodapé da página */
+footer {
+    background-color: #F5F7F8; 
+    color: #45474B; 
+    text-align: center; 
+    padding: 0; 
+    width: 100%; 
+    bottom: 0;
+    font-size: 1.2rem; 
+}
